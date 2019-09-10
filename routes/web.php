@@ -1,5 +1,7 @@
 <?php
 
+use Inertia\Inertia;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,5 +14,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return Inertia::render('Welcome');
+});
+
+Route::get('/about', function () {
+    return Inertia::render('About');
+});
+
+Route::get('/contact', function () {
+    return Inertia::render('Contact');
 });
