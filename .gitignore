@@ -1,4 +1,11 @@
 /node_modules
+
+/public/*
+!/public/favicon.ico
+!/public/robots.txt
+!/public/.htaccess
+!public/index.php
+
 /public/hot
 /public/storage
 /storage/*.key
