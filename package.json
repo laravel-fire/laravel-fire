@@ -1,5 +1,5 @@
 {
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": false,
   "scripts": {
     "dev": "npm run development",
@@ -51,7 +51,7 @@
     "ui"
   ],
   "license": "MIT",
-  "main": "index.js",
+  "main": "fire.js",
   "name": "laravel-fire",
   "repository": {
     "type": "git",

@@ -10,9 +10,10 @@ var currentPath = process.cwd();
 var fs = require('fs');
 
 program
-  .version('0.0.3', '-v, --version')
+  .version('0.0.4', '-v, --version')
   .description('GUI tool for laravel')
-  .command('install [name]', 'install one or more packages').alias('i')
+  .command('install ', 'install current package').alias('i')
+  .command('run ', 'run current gui').alias('r')
   // .command('search [query]', 'search with optional query').alias('s')
   // .command('list', 'list packages installed')
   // .command('publish', 'publish the package').alias('p')
