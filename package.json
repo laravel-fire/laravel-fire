@@ -1,4 +1,5 @@
 {
+  "version": "0.0.3",
   "private": false,
   "scripts": {
     "dev": "npm run development",
@@ -56,5 +57,7 @@
     "type": "git",
     "url": "git+https://github.com/laravel-fire/laravel-fire.git"
   },
-  "version": "0.0.2"
+  "bin": {
+    "fire": "./fire.js"
+  }
 }
