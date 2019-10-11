@@ -1,12 +1,8 @@
 <p align="center">
-    <img src="https://avatars2.githubusercontent.com/u/54887177?s=72&v=4" alt="logo" width=72 height=72>
-  <h3 align="center">laravel-fire</h3>
-  <p align="center">
-    Secret project.
-    <br>
-    <br>
-  </p>
+    <img width="400" height="195" src="https://raw.githubusercontent.com/laravel-fire/laravel-fire/master/fire-logo.png" alt="Laravel Fire logo" />
+    <p align="center">SECRET PROJECT</p>
 </p>
-<br>
 
-## SECRET PROJECT
+## Credits
+- Created by [🔥](https://twitter.com/_RossiLuca_)
+- Logo by [Caneco](https://twitter.com/caneco)
