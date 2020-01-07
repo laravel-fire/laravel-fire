@@ -13,9 +13,7 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', function () {
-    return Inertia::render('Welcome');
-});
+Route::get('/')->name('dashboard')->uses('ProjectsController@index');
 
 Route::get('/about', function () {
     return Inertia::render('About');
