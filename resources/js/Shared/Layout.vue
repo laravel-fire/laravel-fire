@@ -1,7 +1,7 @@
 <template>
-  <main>
-    <Toolbar></Toolbar>
-    <div class="bg-gray-200 h-screen">
+  <main class="bg-gray-100 h-screen">
+    <Toolbar />
+    <div class="container mx-auto">
       <slot />
     </div>
   </main>

@@ -1,7 +1,7 @@
 
 <template>
   <div id="nav" class="bg-white shadow">
-    <div class="md:px-8">
+    <div class="container mx-auto">
     <nav class="relative flex flex-wrap items-center justify-between md:py-4">
         <div class="relative z-10 flex-shrink-0 pl-4 py-4 md:p-0">
         <img class="h-10 w-50" src="@/../assets/logo/fire-logo.png" alt="">
