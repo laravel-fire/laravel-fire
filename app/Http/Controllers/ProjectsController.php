@@ -16,4 +16,11 @@ class ProjectsController extends Controller
             'projects'  => $projects
         ]);
     }
+
+    protected function openInEditor()
+    {
+      $editor = config('app.editor');
+      echo exec($editor . ' /Users/lucarossi/code/motionwall');
+      return back();
+    }
 }

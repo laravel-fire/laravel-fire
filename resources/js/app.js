@@ -2,16 +2,19 @@ import { InertiaApp } from '@inertiajs/inertia-vue'
 import Vue from 'vue'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import {faPencilAlt, faTimes} from '@fortawesome/free-solid-svg-icons'
+import {faBook, faPencilAlt, faTimes} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(faTimes, faPencilAlt);
+library.add(faTimes, faPencilAlt, faBook);
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.use(InertiaApp)
 
 const app = document.getElementById('app')
+
+
+Vue.mixin({ methods: { route: window.route } });
 
 new Vue({
   render: h => h(InertiaApp, {
