@@ -45,7 +45,7 @@
             </div>
           </div>
           <div class="flex justify-end">
-            <button class="bg-red-100 rounded px-3 py-1 text-sm font-semibold text-red-700 mr-2" @click="open">
+            <button class="bg-red-100 rounded px-3 py-1 text-sm font-semibold text-red-700 mr-2" @click="open(project.path)">
               Open in editor
             </button>
             <button class="bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
@@ -72,7 +72,7 @@ export default {
   methods: {
     open(path)
     {
-      this.$inertia.post(this.route('project.openineditor'));
+      this.$inertia.post(this.route('project.openineditor'), { 'path': path });
     }
   }
 }

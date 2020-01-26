@@ -135,7 +135,7 @@ return [
     */
 
 
-    'editor' => '/usr/local/bin/pstorm',
+    'editor' => 'code',
 
     'providers' => [
 
