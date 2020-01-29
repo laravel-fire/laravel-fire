@@ -14,7 +14,7 @@ use Inertia\Inertia;
 */
 
 Route::get('/')->name('dashboard')->uses('ProjectsController@index');
-
+Route::any('project/import')->name('project.import')->uses('ProjectsController@import');
 Route::post('project/open')->name('project.openineditor')->uses('ProjectsController@openInEditor');
 
 Route::get('/about', function () {

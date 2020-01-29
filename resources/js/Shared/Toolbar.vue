@@ -19,7 +19,9 @@
           <div class="lg:absolute inset-0 flex items-center justify-center">
             <a href="#" class="text-sm font-medium text-gray-900 hover:text-gray-700">Projects</a>
             <a href="#" class="ml-10 text-sm font-medium text-gray-900 hover:text-gray-700">Create</a>
-            <a href="#" class="ml-10 text-sm font-medium text-gray-900 hover:text-gray-700">Import</a>
+            <inertia-link :href="route('project.import')">
+            <span class="ml-10 text-sm font-medium text-gray-900 hover:text-gray-700">Import</span>
+            </inertia-link>
           </div>
         </div>
     </nav>

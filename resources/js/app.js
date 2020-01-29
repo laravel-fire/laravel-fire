@@ -3,9 +3,10 @@ import Vue from 'vue'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import {faBook, faPencilAlt, faTimes} from '@fortawesome/free-solid-svg-icons'
+import {faFolder} from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(faTimes, faPencilAlt, faBook);
+library.add(faTimes, faPencilAlt, faBook, faFolder);
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

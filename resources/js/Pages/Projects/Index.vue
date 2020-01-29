@@ -1,5 +1,6 @@
 <template>
   <div class="mt-10">
+    <!-- Pinned projects -->
     <span class="text-2xl font-bold">Pinned Projects</span>
     <div class="pt-3 pb-10 overflow-y-auto">
       <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white"  v-for="project in projects" :key="project.id">
@@ -25,9 +26,10 @@
         </div>
       </div>
     </div>
+    <!-- All projects -->
     <span class="text-xl font-medium">Other Projects</span>
-    <div class="py-3 overflow-y-auto">
-      <article v-for="project in projects" :key="project.id" class="mt-3 px-6 pt-4 pb-4 xl:px-10 xl:pt-5 xl:pb-5 bg-white rounded-lg">
+    <div class="my-3 overflow-y-auto shadow-md  rounded-lg">
+      <article v-for="project in projects" :key="project.id" class="mt-3 px-6 pt-4 pb-4 xl:px-10 xl:pt-5 xl:pb-5 bg-white border-b border-gray-400">
         <div class="flex items-center justify-between">
           <div class="flex">
             <div class="flex px-3 bg-gray-200 rounded-full" style="align-items:center">
