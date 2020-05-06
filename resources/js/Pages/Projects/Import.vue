@@ -1,7 +1,14 @@
 <template>
   <div class="mt-10">
     <span class="text-2xl font-bold">Import Project</span>
-    <div class="my-3 overflow-y-auto shadow-md rounded-lg bg-white directoryStructure">
+    <div class="flex mb-4">
+      <div class="w-1/6"></div>
+      <div class="w-4/6">
+        <input placeholder="Testo" class="transition focus:outline-none border border-gray-400 focus:border-gray-500 placeholder-gray-600 rounded-lg py-2 pr-4 pl-10 block w-full appearance-none leading-normal ds-input">
+      </div>
+      <div class="w-1/6"></div>
+    </div>
+    <div class="my-3 overflow-y-auto shadow-md bg-white directoryStructure">
       <article v-for="(directory, index) in directoryStructure" :key="index" @click="changeDirectoryStructure(directory.path)" class="px-6 xl:px-10 xl:pt-5 xl:pb-5 hover:bg-gray-200 cursor-pointer">
         <div class="flex items-center justify-between">
           <div class="flex">

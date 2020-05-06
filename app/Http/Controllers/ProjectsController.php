@@ -12,9 +12,12 @@ class ProjectsController extends Controller
 
         $projects = Project::all();
 
-        return Inertia::render('Projects/Index', [
-            'projects'  => $projects
+        return view('pages.projects', [
+          'projects'  => $projects
         ]);
+
+        // return Inertia::render('Projects/Index', [
+        // ]);
     }
 
     protected function import(Request $request)
