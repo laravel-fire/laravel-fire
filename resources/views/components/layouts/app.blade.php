@@ -7,17 +7,17 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
+    <title>{{ config('app.name', 'Laravel Fire') }}</title>
 
     <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    <livewire:styles>
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     @yield('styles')
 </head>
 <body>
@@ -25,13 +25,17 @@
         <!-- Navbar -->
         <x-toolbar></x-toolbar>
         <!-- Contents -->
-        <div class="flex-1 flex overflow-hidden">
-            <x-sidebar></x-sidebar>
-            <main class="flex-1 flex">
-                {{ $slot }}
-            </main>
+        <div class="overflow-hidden h-screen">
+            <div class="max-w-7xl flex mx-auto h-screen">
+                <x-sidebar></x-sidebar>
+                <main class="flex-1 flex">
+                    {{ $slot }}
+                </main>
+            </div>
         </main>
         @yield('scripts')
+        <script src="{{ mix('js/app.js') }}"></script>
+        <livewire:scripts>
     </div>
 </body>
 </html>
