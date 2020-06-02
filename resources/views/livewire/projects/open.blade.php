@@ -1,3 +1,3 @@
-<button wire:click="openInEditor()" class="text-sm font-semibold">
+<button wire:click="openInEditor('{{ $project->path }}')" class="text-sm font-semibold">
     Open in editor
 </button>

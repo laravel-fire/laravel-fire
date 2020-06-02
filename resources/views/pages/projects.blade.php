@@ -17,7 +17,7 @@
               </div>
               <div class="flex text-right">
                 <div class="">
-                  <livewire:projects.open />
+                  @livewire('projects.open', ['project' => $project])
                 </div>
               </div>
             </div>
